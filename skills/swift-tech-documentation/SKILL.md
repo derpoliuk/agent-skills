@@ -14,6 +14,7 @@ This skill covers technical documentation: how a system works and why important 
 - Keep each fact in one place and link to it elsewhere.
 - Put details near the code they explain. Use broader documents for concepts that span files or components.
 - Update documentation in the same change as the behavior it describes.
+- Describe the current state in READMEs and repository documentation. Don't point to planned work, open pull requests, or follow-up issues ("not yet", "until then", "comes with #42"). A follow-up may never land, but the reference stays and the document goes out of date. State a known gap as a current fact: "Responses aren't cached; each request goes to the network." Plans belong in the change description, a pull request comment, or an ADR when a change spans several pull requests. Code comments follow their own rules (see "Implementation comments").
 - If an API is hard to describe simply, consider whether its design can be clearer.
 - Comments support abstraction: callers should not need to read an implementation to learn how to use an API. Tests verify behavior but do not replace usage documentation.
 
